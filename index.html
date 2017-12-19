@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-family:Consolas,"Microsoft Yahei", "tahoma", "arial", "\5b8b\4f53";
+            font-size: 1em;
+            color:#666;
+            background: #fff;
+            overflow: auto;
+            background:url("images/bg_header.png");
+        }
+        *,*:after,*:before{
+            box-sizing: border-box;
+        }
+
+        img,input{
+            display: block;
+        }
+        ul, li {
+            list-style: none;
+        }
+        a{
+            font-size: 12px;
+            color: #666;
+            text-decoration: none;
+        }
+        .fn-float-none{
+            clear: both;
+        }
+        .main{
+            width: 950px;
+            margin: auto;
+        }
+        .title{
+            background: url("images/bg_top.png");
+            text-align: center;
+            font-size: 40px;
+            line-height: 120px;
+            font-weight: bold;
+            color: #666;
+            text-shadow: 0px -2px 3px rgba(0,0,0,0.15);
+            box-shadow: 0 -3px 3px rgba(0,0,0,.15) inset;
+        }
+        .main ul{
+            padding-top: 20px;
+            overflow: hidden;
+            border-top:3px solid #eee ;
+        }
+        .main ul li{
+            width: 33.33%;
+            float: left;
+            margin-bottom: 20px;
+        }
+        .main ul li a{
+            width: 100%;
+            display: block;
+            line-height: 32px;
+            text-align: center;
+            overflow: hidden;
+            border-radius: 4px;
+            box-shadow: 0 0 6px rgba(0,0,0,.2);
+        }
+        .main ul li a:hover{
+            color:#999
+        }
+        .main ul li a>img{
+            width: 96%;
+            margin:5px auto;
+        }
+        .box{
+            width: 90%;
+            margin: auto;
+        }
+        .con-title{
+            position: relative;
+            display: block;
+            line-height: 32px;
+            margin-top: 20px;
+            color: #000;
+            border-bottom:1px solid #ccc ;
+            text-indent: 1.2em;
+        }
+        .con-title:before{
+            width: 12px;
+            height: 12px;
+            border-radius: 12px;
+            border: 3px solid #ccc;
+            display: block;
+            content: "";
+            position: absolute;
+            top:10px;
+        }
+    </style>
+</head>
+<body>
+<div class="title">
+    德力西银行大屏
+</div>
+<div class="main">
+    <span class="con-title">第一屏</span>
+    <ul>
+        <li>
+            <div class="box">
+                <a href="one-city.html">
+                    <img src="images/home/1-top-city.jpg">
+                    第一屏上半部
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="box">
+                <a href="one-bottom-left.html">
+                    <img src="images/home/1-bottom-left.jpg">
+                    第一屏下半部-左
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="box">
+                <a href="one-bottom-right.html">
+                    <img src="images/home/1-bottom-right.jpg">
+                    第一屏下半部-右
+                </a>
+            </div>
+        </li>
+
+    </ul>
+    <span class="con-title">第二屏</span>
+    <ul>
+        <li>
+            <div class="box">
+                <a href="two-top-right.html">
+                    <img src="images/home/2.jpg">
+                    第二屏
+                </a>
+            </div>
+        </li>
+    </ul>
+    <span class="con-title">第三屏－尺寸，1280＊1024</span>
+    <ul>
+        <li>
+            <div class="box">
+                <a href="three.html">
+                    <img src="images/home/3.png">
+                    第三屏－尺寸，1280＊1024
+                </a>
+            </div>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

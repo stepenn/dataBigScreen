@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>飞机大战</title>
+    <style>
+        *{margin:0;padding:0;}
+        html,body{width:100%;height:100%;}
+        body{background:url('images/city/sky.jpg') no-repeat;background-size:cover;font-family: 'microsoft yahei';}
+        #main{width:360px;height:450px;border:8px solid #FC7409;border-radius: 20px;margin:50px auto 0;}
+        #main h3{color:#fff;text-align:center;font-size:24px;margin:50px auto 50px;}
+        #main p{width:160px;height:40px;line-height:40px;margin:50px auto;background:#F7F7F7;text-align: center;cursor: pointer;}
+        #main p.active{background: #91e6ff;color: #fff;}
+    </style>
+</head>
+<body>
+    <div id="main"></div>
+</body>
+<script>
+    window.onload = function(){
+        planeWar.init();
+    }
+
+    var planeWar = {
+        'main':document.getElementById('main'),
+        'img':function(){
+            var oImg = new Image();
+            oImg.src = 'images/city/plane.png';
+        },
+        //初始化
+        'init':function(){
+            var oTitle = planeWar.ctE('h3');
+               oTitle.innerHTML = '全民飞机大战';
+            planeWar.main.appendChild(oTitle);
+            var oDiv = planeWar.ctE('div');
+                oDiv.innerHTML = '<p>初级</p><p>中级</p><p>困难</p>';
+            planeWar.main.appendChild(oDiv);
+
+            var oP = oDiv.children;
+            for(var i = 0;i<oP.length;i++){
+                oP[i].onmouseover = function(){
+                    this.className = 'active';
+                }
+                oP[i].onmouseout = function(){
+                    this.className = '';
+                }
+                oP[i].onclick = planeWar.start;
+            }
+        },
+        //游戏开始
+        'start':function(){
+            planeWar.main.innerHTML= '';
+        },
+        'ctE':function(tagName){
+            return document.createElement(tagName);
+        }
+
+    };
+
+</script>
+</html>

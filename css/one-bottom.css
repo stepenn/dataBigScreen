@@ -1,0 +1,50 @@
+*{margin:0;padding:0}
+html,body,#main{
+	width:100%;
+	height:100%;
+}
+ul,li{list-style:none;}
+body{
+	background:#020a32;
+	color:#cfd4e8;
+	font-family: Consolas,"Microsoft Yahei", "tahoma", "arial", "\5b8b\4f53";
+	font-size: 1em;
+
+}
+#main{	
+	width:3000px;
+    height:100%;    
+	position:absolute;
+	overflow:hidden;
+}
+.line{
+	float:left;
+}
+.situation{
+	float:left;
+	padding-top:20%;	
+	padding-left:8%;
+	overflow:hidden;
+}
+.situation .customer{
+	width:40px;
+	float:left;		
+}
+.situation .customer ul{
+	padding-left:20%;			
+}
+.text{
+	color: #cfd4e8;		
+	font-size: 1em;
+	position:absolute;		
+	left:1%;
+	top:68%;
+}
+.text div.fn-txt{		
+	line-height: 100px;
+	float:left;
+	margin-right:35px;
+}
+.partFirst{
+	margin-right:8%;
+}

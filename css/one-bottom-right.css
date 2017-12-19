@@ -1,0 +1,90 @@
+html {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family:Consolas,"Microsoft Yahei", "tahoma", "arial", "\5b8b\4f53";
+    font-size: 1em;
+    color:#fff;
+    /*background: #020a32;*/
+    background: #121529;
+    overflow: auto;
+}
+html,body{
+    width:100%;
+    height:100%;
+}
+*{margin:0;padding:0;}
+*,*:after,*:before{
+    box-sizing: border-box;
+}
+
+img,input{
+    display: block;
+}
+ul, li {
+    list-style: none;
+}
+.fn-left{
+    float: left;
+}
+.fn-right{
+    float: right;
+}
+.main{
+    width:25%;
+    height:100%;
+    margin-top:2%;
+    transform-origin: 0 0;
+    float:left;
+}
+.main>.title{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-radius: 1.6em;
+    background: #3e3e3d;
+    position: absolute;
+    font-size: 5em;
+    line-height: 1.6em;
+    padding-right: 1.2em;
+    overflow: hidden;
+    z-index: 99;
+    transform: scale(0.25);
+    transform-origin: 0 0;
+}
+.title span{
+    display: block;
+    float: left;
+    text-indent: 2.1em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.title .icon svg{
+    position: absolute;
+    top:20px;
+    left: 25px;
+
+}
+.icon{
+    border-radius:1em 1em 0 1em;
+    width: 1.6em;
+    height: 1.6em;
+    float: left;
+    background: #d94d4d;
+    position: absolute;
+}
+.main .content{
+    width: 120%;
+    height: 100%;
+    margin-top:-80px;
+    position: relative;
+    overflow: hidden;
+    top:11%;
+    left:-30px;
+}
+.svg-white{
+    color:#fff;
+    font-size: 42px;
+    fill: #fff;
+    padding-left:2%;
+}

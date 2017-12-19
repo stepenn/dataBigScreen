@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>大屏</title>
+    <link rel="stylesheet" href="css/one.css">
+</head>
+<body>
+<div class="main">
+    <div class="title" id="title">
+        <div class="icon">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+	 width="64px" height="56px" viewBox="0 0 16 14.493" enable-background="new 0 0 16 14.493" xml:space="preserve">
+                <g>
+                    <g>
+                        <circle fill="#F8DEDE" cx="8" cy="3.937" r="3.937"/>
+                        <path fill="#F8DEDE" d="M16,14.493v-1.298c0-0.004,0-0.009,0-0.014c-0.014-2.543-2.08-4.601-4.627-4.601H6.798H6.483H4.628
+			c-2.547,0-4.613,2.058-4.627,4.601C0.001,13.185,0,13.19,0,13.194v1.298H16z"></path>
+                    </g>
+                </g>
+            </svg>
+        </div>
+        <span>网商银行全国主要地区信用贷款覆盖情况</span>
+    </div>
+    <div id="map">
+        <svg version="1.1" id="mapIcon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="40px" height="68px" viewBox="0 0 114.5 165.883" enable-background="new 0 0 114.5 165.883" xml:space="preserve">
+                <ellipse fill="#2E2F2F" cx="57.25" cy="160.333" rx="32.768" ry="5.549"/>
+            <g>
+                <path fill="#EB6870" d="M114.5,57.25c0,31.618-23.75,68.25-57.25,101.75C23.781,125.333,0,88.868,0,57.25S25.632,0,57.25,0
+	S114.5,25.632,114.5,57.25z"/>
+                <circle fill="none" stroke="#FFFFFF" stroke-width="20" stroke-miterlimit="10" cx="57.25" cy="55.5" r="28.772"></circle>
+            </g>
+        </svg>
+        <div class="sum">
+        </div>
+    </div>
+    <div id="rigBox">
+        <h3>top5市贷款客户数</h3>
+        <div class="contentFirst">
+            <ul>
+            </ul>
+        </div>
+        <h3 class="top">top5市累放金额</h3>
+        <div class="content">
+            <ul>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    var rightJsonUrl="data/one/map.json",totalJsonUrl="data/one/mybank.json";
+</script>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script src="js/one.js?v=1"></script>
+</html>

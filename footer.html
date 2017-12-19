@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>拼footer</title>
+    <style>
+        *{margin:0;padding:0;}
+        body{background:#F3F3F3;font-family: 'microsoft yahei';color:#fff;}
+        header{width:100%;background:#5891DC;height:60px;text-align: center;}
+        section{width:1200px;margin:15px auto 0;background:#fff;height:750px;color:#ccc;text-align: center;}
+        /*footer{width:100%;background:#fff;padding:20px 0;margin-top:15px;color:#aaa;text-align:center;}*/
+    </style>
+</head>
+<body>
+    <header>
+        <nav>导航</nav>
+    </header>
+    <section>中间内容区块</section>
+
+</body>
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script>
+    $(function(){
+        var txt = '蚂蚁金服-工程效能部';
+        var footHtml = '<footer style="width:100%;background:#fff;padding:20px 0;margin-top:15px;color:#aaa;text-align:center;">'+
+                        '<span>'+txt+
+                        '</span>'+
+                        '<span>'+'cnzz'+
+                        '</span>'
+                        '</footer>'
+        $('body').append(footHtml);
+    })
+</script>
+</html>

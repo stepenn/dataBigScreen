@@ -1,0 +1,101 @@
+html {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family:Consolas,"Microsoft Yahei", "tahoma", "arial", "\5b8b\4f53";
+    font-size: 1em;
+    color:#fff;
+    background: rgb(42,49,96); /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(42,49,96,1) 30%, rgba(2,3,4,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(2,3,4,1)), color-stop(100%,rgba(2,3,4,1))); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(42,49,96,1) 30%,rgba(2,3,4,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover, rgba(42,49,96,1) 30%,rgba(2,3,4,1) 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover, rgba(42,49,96,1) 30%,rgba(2,3,4,1) 100%); /* IE10+ */
+    background: radial-gradient(ellipse at center, rgba(42,49,96,1) 30%,rgba(2,3,4,1) 100%); /* W3C */
+    overflow: auto;
+}
+html,body{
+    width: 1280px;
+    height: 1024px;
+}
+*{margin:0;padding:0;}
+*,*:after,*:before{
+    box-sizing: border-box;
+}
+
+img,input{
+    display: block;
+}
+ul, li {
+    list-style: none;
+}
+.fn-left{
+    float: left;
+}
+.fn-right{
+    float: right;
+}
+.fn-hide{
+    display: none;
+}
+.main,.bg_icon,.svg-dom{
+    width: 1280px;
+    height: 1024px;
+    overflow: hidden;
+    position: relative;
+
+}
+.bg_icon{
+    text-align: center;
+}
+.bg_icon .top{
+    margin: auto;
+    display: inline-block;
+}
+.bg_icon .left{
+    position: absolute;
+    top:50%;
+    margin-top: -320px;
+}
+.bg_icon .bottom{
+    position: absolute;
+    bottom:0;
+    left:50%;
+    margin-left: -248px;
+}
+.bg_icon .right{
+    position: absolute;
+    right: 0;
+    top:50%;
+    margin-top: -290px;
+}
+.svg-dom{
+    position: absolute;
+    top:0;
+    left:0;
+}
+.c_img{
+    position: absolute;
+    top:0;
+    z-index: 1;
+    opacity: 0;
+}
+#rotate{
+    animation: Rotate360 20s infinite linear;
+    -webkit-animation: Rotate360 20s infinite linear;
+}
+@keyframes Rotate360 {
+    to {
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes Rotate360 {
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+#logo{
+    position: absolute;
+    top:1%;
+    right:1%;
+}

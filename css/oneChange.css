@@ -1,0 +1,18 @@
+html,body{
+    width: 1920px;
+    height: 1200px;
+    overflow: hidden;
+}
+.main{
+    width:50%;
+    /*padding-left:32px;*/
+}
+.main div.title{
+    transform: scale(1);
+}
+.main div.title1{
+    padding-right:2.2em;
+}
+.main div.title1 span{
+   margin-left:1em;
+}

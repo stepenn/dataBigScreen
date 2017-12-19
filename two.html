@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>第二屏左部分</title>
+  <link rel="stylesheet" href="css/two.css">
+</head>
+<body>
+	<div class="top-box" id="farmer">
+		<div class="tite" id="title">
+			<div class="ion">
+				<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			 width="50px" height="40px" viewBox="0 0 16 14.493" xml:space="preserve">
+						<g>
+							<g>
+								<circle fill="#F8DEDE" cx="8" cy="3.937" r="3.937"/>
+								<path fill="#F8DEDE" d="M16,14.493v-1.298c0-0.004,0-0.009,0-0.014c-0.014-2.543-2.08-4.601-4.627-4.601H6.798H6.483H4.628
+					c-2.547,0-4.613,2.058-4.627,4.601C0.001,13.185,0,13.19,0,13.194v1.298H16z"/>
+							</g>
+						</g>
+					</svg>
+			</div>
+			<span>小微企业网商银行信用贷款情况</span>
+		</div>
+		<div class="img-box">
+			<div><img src="images/2/nm.png" id="img"></div><div><img src="images/2/nm.png" id="img"></div>
+		</div>
+		<div class="sum">
+			<ul>
+				<li class="customer">
+					<p>累计服务客户数（单位：万人）</p>
+					<span></span>
+				</li>
+				<li class="amount">
+					<p>累放金额（单位：万元）</p>
+					<span></span>
+				</li>
+			</ul>
+		</div>
+		<div class="list-box">
+			<div class="list-title">
+				特色行业top6
+			</div>
+			<div id="data" class="math">
+			</div>
+		</div>
+		<div class="list-box">
+			<div id="listTitle" class="list-title">企业注册时长分布</div>
+			<div class="conten">
+				<div id="colum">
+					<div class="colum-mask">
+						<div class="colum-box"></div>
+						<div class="colum-circ"></div>
+					</div>
+					<div class="colum-date"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="top-box" id="students">
+		<div class="tite" id="title">
+			<div class="ion">
+				<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			 width="50px" height="40px" viewBox="0 0 16 14.493" enable-background="new 0 0 16 14.493" xml:space="preserve">
+						<g>
+							<g>
+								<circle fill="#F8DEDE" cx="8" cy="3.937" r="3.937"/>
+								<path fill="#F8DEDE" d="M16,14.493v-1.298c0-0.004,0-0.009,0-0.014c-0.014-2.543-2.08-4.601-4.627-4.601H6.798H6.483H4.628
+					c-2.547,0-4.613,2.058-4.627,4.601C0.001,13.185,0,13.19,0,13.194v1.298H16z"/>
+							</g>
+						</g>
+					</svg>
+			</div>
+			<span>小微企业网商银行信用贷款情况</span>
+		</div>
+		<div class="img-box">
+			<div><img src="images/2/nm.png" id="img" style="margin: 15px 0px 15px 15px;"></div>
+		</div>
+		<div class="sum">
+			<ul>
+				<li class="customer">
+					<p>累计服务客户数（单位：万人）</p>
+					<span></span>
+				</li>
+				<li class="amount">
+					<p>累放金额（单位：万元）</p>
+					<span></span>
+				</li>
+			</ul>
+		</div>
+		<div class="list-box">
+			<div class="list-title">
+				特色行业top6
+			</div>
+			<div id="data" class="math">
+			</div>
+		</div>
+		<div class="list-box">
+			<div id="listTitle" class="list-title">贷款人年龄分布</div>
+			<div class="conten">
+				<div id="colum">
+					<div class="colum-mask">
+						<div class="colum-box"></div>
+						<div class="colum-circ"></div>
+					</div>
+					<div class="colum-date"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<span style="display:none;"id="jumpTo"></span>
+</body>
+<script>
+	 var jsonUrly="data/two/two-top.json",leftJsonUrl="data/two/two-left.json";
+     var jsonBottomUrl="data/two/chanTwo.json";
+	 var domData=[
+		 {id:"farmer",title:"网商银行小微企业信用贷款情况",img:"images/2/zf.png"},
+		 {id:"students",title:"网商银行涉农贷款情况",img:"images/2/nm.png"},
+	 ]
+</script>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script src="js/two.js?v=1"></script>
+<!--<script type="text/javascript">-->
+	<!--function countDown(secs,surl){-->
+		<!--//alert(surl);-->
+		<!--var jumpTo = document.getElementById('jumpTo');-->
+		<!--jumpTo.innerHTML=secs;-->
+		<!--if(&#45;&#45;secs>0){-->
+			<!--setTimeout("countDown("+secs+",'"+surl+"')",1000);-->
+		<!--}-->
+		<!--else{-->
+			<!--location.href=surl;-->
+		<!--}-->
+	<!--}-->
+<!--</script>-->
+<!--<script>-->
+	<!--$(document).ready(function(){-->
+		<!--$("body").css("display","none");-->
+		<!--$("body").fadeIn(2000);-->
+	<!--});-->
+<!--</script>-->
+<!--<script type="text/javascript">countDown(10,'two-top-right.html');</script>-->
+</html>

@@ -1,0 +1,146 @@
+body{
+    font-family:"microsoft yahei";
+    color:#C1CAFF;font-size:12px;
+}
+
+html,body,#container{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+#box{
+    width:100%;
+    height: 50%;
+}
+.tile{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-radius: 1em;
+    background: #3e3e3d;
+    padding-right:0.5em;
+    font-size: 32px;
+    line-height: 70px;
+    overflow: hidden;
+    margin: auto;
+    z-index: 99;
+    display: inline-block;
+}
+.tile span{
+    display: block;
+    float: left;
+    text-indent: 2.1em;
+    font-size:36px;
+}
+.tile .icon svg{
+    position: absolute;
+    top:10px;
+    left: 10px;
+}
+.list-box{
+    width:50%;
+    height:150%;
+    float:left;
+    margin-top:2.1em;
+    position:relative;
+}
+.icon{
+    border-radius:1em 1em 0 1em;
+    width: 70px;
+    height: 70px;
+    float: left;
+    background: #d94d4d;
+    position: absolute;
+}
+.img-box{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: 2px solid #434865;
+    margin-top:3%;
+    margin-left:16%;
+    padding:10px;
+	/*margin: 30px auto 0;*/
+    overflow: hidden;    
+}
+.img-box>div{
+    background: #4b516d;
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+    border-radius:100%;
+    margin: -2px 0 0 -2px;
+}
+.img-box>div>img{
+    margin:0 auto;
+    width:100%;
+    height:100%;
+
+}
+.list-box div.tile1{
+    padding-right:1.8em;
+}
+.list-box div.tile1 span{
+    margin-left:1em;
+}
+/*表格*/
+.table{
+    position:absolute;
+    top:8%;
+    width:85%;
+    height:100%;
+    z-index:1;
+}
+table {
+    border-collapse: collapse;
+    margin-top: 17%;
+    float: left;
+    margin-left: 76px;
+    width: 78%;
+    height: 60%;
+}
+table tr{
+    width:100%;
+    height:16%;
+}
+table tr td{
+    width:10%;
+    height:10%;
+    border: 2px solid #39416f;
+}
+.left-standard{
+    position: absolute;
+    left: 8%;
+    top: 16%;
+}
+.right-standard{
+    position: absolute;
+    width:15%;
+    left: 94%;
+    top: 16%;
+}
+.left-standard li{
+    margin-bottom:56%;
+    font-size:1.2em;
+}
+.right-standard li{
+    margin-bottom:31%;
+    font-size:1.2em;
+}
+.list-box div.sum{
+    position:absolute;
+    top:12%;
+    right:4%;
+    color:#c1caff;
+}
+.list-box div.sum p{
+    line-height:50px;
+    font-size:18px;
+}
+.list-box div.sum span{
+    color:#fff;
+    font-size:36px;
+    font-family: "Microsoft Yahei";
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    overflow: hidden;
+}

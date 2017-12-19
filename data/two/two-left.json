@@ -1,0 +1,26 @@
+{
+  "farmer": [
+    {
+      "id": "customer",
+      "number": "4106655",
+      "unit": "万人"
+    },
+    {
+      "id": "amount",
+      "number": "166525",
+      "unit": "万元"
+    }
+  ],
+  "students": [
+    {
+      "id": "customer",
+      "number": "665215",
+      "unit": "万人"
+    },
+    {
+      "id": "amount",
+      "number": "6821992",
+      "unit": "万元"
+    }
+  ]
+}

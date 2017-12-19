@@ -1,0 +1,222 @@
+html {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family:Consolas,"Microsoft Yahei", "tahoma", "arial", "\5b8b\4f53";
+    font-size: 1em;
+    color:#fff;
+    /*background: #020a32;*/
+    background: radial-gradient(ellipse at center, rgba(42,49,96,1) 20%,rgba(2,3,4,1) 100%);/*省去兼容写法*/
+    overflow: auto;
+}
+html,body{
+    width: 1920px;
+    height: 1080px;
+    /*overflow: hidden;*/
+}
+*{margin:0 auto;padding:0;}
+*,*:after,*:before{
+    box-sizing: border-box;
+}
+
+img,input{
+    display: block;
+}
+ul, li {
+    list-style: none;
+}
+.fn-left{
+    float: left;
+}
+span.fn-right{
+    display:block;
+    margin-top:-12px;
+    overflow: hidden;
+}
+#tipBox ul li{
+    float: left;
+    position:relative;
+    margin-left:10px;
+}
+.main{
+    width: 1920px;
+    height: 1080px;
+    transform-origin: 0 0;
+    padding: 2% 0 0 2%;
+}
+.main>.title{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-radius: 1.6em;
+    background: #3e3e3d;
+    position: absolute;
+    font-size: 4.5em;
+    line-height: 1.6em;
+    padding-right: 1.2em;
+    overflow: hidden;
+    z-index: 99;
+    transform-origin: 0 0;
+    margin-left:-10px;
+}
+.title span{
+    display: block;
+    float: left;
+    text-indent: 2.1em;
+}
+.title .icon svg{
+    position: absolute;
+    top:20px;
+    left: 25px;
+
+}
+.icon{
+    border-radius:1em 1em 0 1em;
+    width: 1.6em;
+    height: 1.6em;
+    float: left;
+    background: #d94d4d;
+    position: absolute;
+}
+#map{
+    background: url("../images/map.png") no-repeat;
+    width: 1349px;
+    height: 992px;
+    position:absolute;
+    margin-top:5%;
+    left:2%;
+    top:15%;
+    transform-origin: left top;
+}
+.main .sum{
+    min-width:560px;
+    min-height:150px;
+    position:absolute;
+    background:rgba(67,72,102,.8);
+    left:2%;
+    top:5%;
+    border-radius:30px;
+    font-size:32px;
+    font-family:'Microsoft Yahei';
+    color:#AEB4E6;
+    padding:15px 30px;
+}
+.main .sum i{
+    font-style:normal;
+}
+.main .sum span{
+    color:#FAEE04;
+    font-size:42px;
+    padding:0 15px;
+}
+#rigBox{
+    /*float: right;*/
+    position: relative;
+    border-radius: 1.4em;
+    overflow: hidden;
+    transform-origin: 100% 0;
+    right: -33%;
+    top:17%;
+    width: 25%;
+}
+#rigBox h3{
+    font-size:36px;
+    background: #7b83ad;
+    padding: 0 20px;
+    border-bottom: 2px solid #282b3e;
+    letter-spacing: 3px;
+    font-weight:normal;
+}
+#rigBox .content, #rigBox .contentFirst{
+    font-size: 30px;
+    line-height: 45px;
+    padding: 20px;
+    background: #434866;
+    color:#ced4f3;
+    border-radius:0 0 0.8em 0.8em;
+    font-weight:normal;
+}
+#rigBox ul li{
+    font-size:26px;
+}
+#rigBox .content ul li> span>*,#tipBox .content ul li>span>*,
+#rigBox .contentFisrt ul li> span>*,#tipBox .contentFisrt ul li>span>*{
+    float: left;
+}
+
+#rigBox .content ul li p, #rigBox .contentFisrt ul li p,#rigBox .contentFirst p{
+	font-size:24px;
+}
+#rigBox .contentFirst p{
+    float:right;
+    margin-left:-170px;
+}
+.contentFirst span.t-rig .txt{
+    position:absolute;
+    right:-23px;
+}
+.contentFirst p.red-data-text {
+    padding-right:55px;
+}
+#rigBox h3.top{
+    margin-top:15%;
+    border-radius:0.5em 0.5em 0 0;
+}
+.red-data-text{
+    color: #fb6b75;
+}
+#map .map-box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#mapIcon{
+    position: absolute;
+}
+#tipBox h3,#rigBox h3{
+    line-height: 1.8em;
+    text-align: center;
+    margin: auto;
+}
+
+#tipBox{
+    min-width: 480px;
+    max-height:150px;
+    position: absolute;
+    overflow: hidden;
+    top:300px;
+    border-radius: 35px;
+    background: rgba(0,0,0,.8) 3% 50% no-repeat;
+    background-size:120px 130px;
+}
+#tipBox h3{
+    clear: both;
+    font-size: 30px;
+    font-weight:normal;
+    overflow: hidden;
+    padding-left:45px;
+}
+#tipBox .content{
+    font-size: 24px;
+    line-height: 50px;
+    padding:0px 20px 10px 135px;
+    margin-top:-10px;
+}
+.red-data-text{
+    font-size: 32px;
+    padding-right:10px;
+}
+/*#tipBox .triang{
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    margin: 0;
+    background: #f00;
+    border-left:15px solid transparent;
+    border-right:15px solid transparent;
+
+}*/
+.t-rig{
+    position: absolute;
+    right: 15px;
+}

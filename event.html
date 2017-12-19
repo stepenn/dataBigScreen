@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>event</title>
+</head>
+<body>
+
+</body>
+<script>
+    function fn(ev){
+        var ev = ev||event;
+        var x = ev.clientX;
+        var y = ev.clientY;
+
+        var oDiv = document.createElement("div");
+        oDiv.style.cssText = 'width:3px;height:3px;background:red;position:fixed;top:'+y+'px;left:'+x+'px;';
+        document.body.appendChild(oDiv);
+//        for(var key in ev){
+//            document.write(key+'='+ev[key]+'<br>');
+//        }
+    }
+     document.onmousemove=fn;
+
+
+
+</script>
+</html>
